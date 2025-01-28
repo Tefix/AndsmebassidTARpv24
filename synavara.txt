@@ -1,0 +1,16 @@
+
+andmebass -AB - база данных 
+andmebaaside haldus - адменистрироваение баз данных
+andmebaasi haldussüstem - система управлия базами данных (SQL server/ XAMPP / Oracle / MS Acces)
+andmed - данные
+tabel - таблица 
+veerg - столбец
+rida = kirje - строчка = запись
+päring - запрос 
+loo - создать
+rakendus - приложение
+varundamine - резервное копроване 
+taastamine - восстановление 
+päringukeel - язык запросов 
+realtsiooni andmebaas - реалционные базы данных
+seos - связь

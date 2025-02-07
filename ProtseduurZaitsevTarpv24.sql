@@ -70,3 +70,26 @@ exec veerulisakustutTabelis @valik= 'add', @tabelinimi= 'linn', @veerunimi='test
 select * from linn;
 exec veerulisakustutTabelis @valik= 'drop', @veerunimi='test';
 
+
+create procedure rahvaHinnang
+@piir int
+
+
+as
+begin 
+select linnNimi, rahvaArv, IIF(rahvaArv<@piir, 'vaike linn', 'suur linn') as Hinnang
+from linn;
+
+end;
+drop procedure rahvaHinnang
+exec rahvaHinnang 2000
+
+create procedure kokkuRahvaarv
+
+as 
+begin
+select sum(rahvaArv) as 'kokku rahvaArv', avg(rahvaArv) as 'keskmine rahvaArv', min(rahvaArv) as 'min rahvaArv', max(rahvaArv) as 'max rahvaArv'
+end;
+
+
+
